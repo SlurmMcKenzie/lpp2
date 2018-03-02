@@ -13,7 +13,7 @@ var xmlhttp = new XMLHttpRequest();
                 if(re_c.test(words[i])) {
                         var c_element = xmlhttp.responseText.match(re_c);
                         for (j = 0; j < c_element.length; j++) {
-                            text += "<tr><td><div>" + c_element[j] + "</div></td></tr>";
+                            text += "<div id='c-element'>" + c_element[j] + "</div>";
                             }
                         }
             }
